@@ -1,5 +1,5 @@
 <div align="center">
-   <a href="https://github.com/coffinxp/loxs"><img src="https://github.com/user-attachments/assets/9fadee1e-a33c-46e3-9eca-c04aa47a443e" hight="225" width="450" align="center"/></a>
+   <a href="https://github.com/coffinxp/FAGUN"><img src="https://github.com/user-attachments/assets/9fadee1e-a33c-46e3-9eca-c04aa47a443e" hight="225" width="450" align="center"/></a>
 </div>
 
 <br>
@@ -16,7 +16,7 @@
 | `S`| `=`| `Structured Query Language Injection (SQLi)`|
 |    |    | `Carriage Return Line Feed Injection (CRLF)`|
 
-> **Loxs** is an easy-to-use tool that finds web issues like `LFI` - `OR` - `SQLi` - `XSS` - `CRLF`. <br><br> *`Made by`* - [`AnonKryptiQuz`](https://github.com/AnonKryptiQuz) x [`Coffinxp`](https://github.com/coffinxp) x [`HexShad0w`](https://github.com/HexShad0w) x [`Naho`](https://github.com/Naho666) x [`1hehaq`](https://github.com/1hehaq) x [`Hghost010`](https://github.com/Hghost0x00)!
+> **Loxs** is an easy-to-use tool that finds web issues like `LFI` - `OR` - `SQLi` - `XSS` - `CRLF`. <br><br> 
 
 </div>
 
@@ -60,10 +60,10 @@
 ### Clone the repository
 
 ```bash
-git clone https://github.com/coffinxp/loxs.git
+git clone https://github.com/coffinxp/FAGUN.git
 ```
 ```bash
-cd loxs
+cd FAGUN
 ```
 
 ### Install the requirements
@@ -74,7 +74,7 @@ pip3 install -r requirements.txt
 ### Run the Script
 
 ```bash
-python3 loxs.py
+python3 FAGUN.py
 ```
 <!-- to update the tool to the latest version
 ```bash
