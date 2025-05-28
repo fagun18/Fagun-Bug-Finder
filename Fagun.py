@@ -151,12 +151,12 @@ try:
 
     def display_menu():
         title = r"""
-     ____           ____  ___                
-    |    |    _____ \   \/  /  ______
-    |    |   /     \ \     /  /  ___/
-    |    |__(   O  / /     \  \___  \
-    |_______/\____/ /___/\  \ /_____/ 
-                          \_/                 
+     _______         _        
+    |  _____|       / \      
+    | |__   __ _  / _ \    
+    |  __| / _` |/ ___ \   
+    | |___| (_| /_/   \_\  
+    |______\__,_/         
     """
         print(Color.ORANGE + Style.BRIGHT + title.center(72))
         print(Fore.WHITE + Style.BRIGHT + "─" * 72)
@@ -179,7 +179,7 @@ try:
             print(border_color + "│" + option_color + option.ljust(72) + border_color + "│")
         
         print(border_color + "└" + "─" * 72 + "┘")
-        authors = "Created by: Coffinxp, 1hehaq, HexSh1dow, Naho, AnonKryptiQuz, Hghost010"
+        authors = "Created by: fagun"
         instructions = "Select an option by entering the corresponding number:"
         
         print(Fore.WHITE + Style.BRIGHT + "─" * 72)
@@ -198,7 +198,7 @@ try:
         |______/|___  |_____||______/|___  |_____|
                 |_____|              |_____|      
         
-  Credit: Coffinxp - 1hehaq - HexSh1dow - AnonKryptiQuz - Naho - Hghost010
+  Credit: fagun
             """,
             style="bold green",
             border_style="blue",
@@ -1773,7 +1773,7 @@ try:
                     print(Fore.RED + f"[!] Error reading input file: {url_input}. Exception: {str(e)}")
                     input(Fore.YELLOW + "[i] Press Enter to try again...")
                     clear_screen()
-                    print(Fore.GREEN + "Welcome to the LFI Testing Tool! - AnonKryptiQuz x 1hehaq x Coffinxp x Hexsh1dow x Naho x Hghost010\n")
+                    print(Fore.GREEN + "Welcome to the LFI Testing Tool!\n")
 
         def prompt_for_payloads():
             while True:
