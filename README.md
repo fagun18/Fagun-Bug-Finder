@@ -6,15 +6,15 @@
 
 <div align="center">
    
-|Loxs|Multi Vulnerability Scanner|for web application|
+|Fagun|Multi Vulnerability Scanner|for web application|
 |----------------|--------------|-------------|
-| `L`| `=`| `Local File Inclusion (LFI)`|
-| `O`| `=`| `Open Redirection (OR)`|
-| `X`| `=`| `Cross Site Scripting (XSS)`|
-| `S`| `=`| `Structured Query Language Injection (SQLi)`|
-|    |    | `Carriage Return Line Feed Injection (CRLF)`|
+| `LFI`| `=`| `Local File Inclusion `|
+| `OR`| `=`| `Open Redirection `|
+| `XSS`| `=`| `Cross Site Scripting `|
+| `SQLi`| `=`| `Structured Query Language Injection `|
+| `CRLF`| `=`| `Carriage Return Line Feed Injection `|
 
-> **Loxs** is an easy-to-use tool that finds web issues like `LFI` - `OR` - `SQLi` - `XSS` - `CRLF`. <br><br> 
+> **Fagun** is an easy-to-use tool that finds web issues like `LFI` - `OR` - `SQLi` - `XSS` - `CRLF`. <br><br> 
 
 </div>
 
@@ -58,10 +58,10 @@
 ### Clone the repository
 
 ```bash
-git clone https://github.com/coffinxp/FAGUN.git
+git clone https://github.com/fagun18/Fagun-Bug-Finder.git
 ```
 ```bash
-cd FAGUN
+cd Fagun-Bug-Finder
 ```
 
 ### Install the requirements
@@ -139,17 +139,6 @@ sudo mv chromedriver /usr/bin
 ```
 <hr>
 
-> [!WARNING]  
-> Loxs is intended for educational and ethical hacking purposes only. It should only be used to test systems you own or have explicit permission to test. Unauthorized use of third-party websites or systems without consent is illegal and unethical.
-
-<br>
-
-<p align="center">
-<img src="https://github.com/user-attachments/assets/9ec3fed0-45ff-4cb3-988c-f8cd66e85082">
-</p>
-
-
-<br>
 
 
 
