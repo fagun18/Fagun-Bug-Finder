@@ -1,8 +1,3 @@
-Here's a **refined and better-formatted version** of your README markdown for `Fagun Bug Finder`, improving consistency, clarity, and visual structure while retaining all the important details:
-
----
-
-````markdown
 # Fagun Bug Finder
 
 > **Fagun** is an advanced web vulnerability scanner that helps identify security issues in web applications.
@@ -68,7 +63,7 @@ cd Fagun-Bug-Finder
 
 # 2. Install dependencies
 pip3 install -r requirements.txt
-````
+
 
 ### Install Chrome & ChromeDriver
 
