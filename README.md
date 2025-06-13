@@ -1,11 +1,11 @@
+<!-- TODO: Add project logo or banner here -->
 # Fagun Bug Finder
 
-> **Fagun** is an advanced web vulnerability scanner that helps identify security issues in web applications.
+<p align="center"><strong>Fagun</strong> is an advanced web vulnerability scanner that helps identify security issues in web applications.</p>
+---
 
 [![Python 3.x](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
----
 
 ### 🔍 Supported Vulnerabilities
 
@@ -19,7 +19,7 @@
 
 ---
 
-## 📚 Table of Contents
+<h2 style="border-bottom: 2px solid #cccccc;">📚 Table of Contents</h2>
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -36,7 +36,7 @@
 
 ---
 
-## 🚀 Features
+<h2 style="border-bottom: 2px solid #cccccc;">🚀 Features</h2>
 
 - **Multi-threaded Scanning** – Fast, efficient testing
 - **Comprehensive Coverage** – Scan for multiple vulnerability types
@@ -47,7 +47,7 @@
 
 ---
 
-## ⚙️ Installation
+<h2 style="border-bottom: 2px solid #cccccc;">⚙️ Installation</h2>
 
 ### Requirements
 - Python 3.6+
@@ -65,7 +65,7 @@ cd Fagun-Bug-Finder
 pip3 install -r requirements.txt
 
 
-### Install Chrome & ChromeDriver
+### 🌐 Install Chrome & ChromeDriver
 
 ```bash
 # Install Chrome
@@ -81,7 +81,7 @@ sudo mv chromedriver /usr/bin/
 
 ---
 
-## ▶️ Usage
+<h2 style="border-bottom: 2px solid #cccccc;">▶️ Usage</h2>
 
 Run the scanner:
 
@@ -89,9 +89,11 @@ Run the scanner:
 python3 FAGUN.py
 ```
 
+<p align="center">[Animated Demo of Fagun in Action - Coming Soon!]</p>
+
 ---
 
-## ⚔️ XSS Testing with `all_url_xss_pipeline.sh`
+<h2 style="border-bottom: 2px solid #cccccc;">⚔️ XSS Testing with <code>all_url_xss_pipeline.sh</code></h2>
 
 Use the `all_url_xss_pipeline.sh` script to automate XSS vulnerability testing via `fagun.py`.
 
@@ -117,10 +119,10 @@ Or:
 
 ---
 
-## 🛡️ Vulnerability Guides
+<h2 style="border-bottom: 2px solid #cccccc;">🛡️ Vulnerability Guides</h2>
 
 <details>
-<summary><strong>LFI (Local File Inclusion)</strong></summary>
+<summary><strong>📄 LFI (Local File Inclusion)</strong></summary>
 
 **What is LFI?**
 Local File Inclusion allows attackers to include files from the server, leading to sensitive data exposure or code execution.
@@ -141,7 +143,7 @@ Local File Inclusion allows attackers to include files from the server, leading 
 </details>
 
 <details>
-<summary><strong>SQL Injection (SQLi)</strong></summary>
+<summary><strong>🗃️ SQL Injection (SQLi)</strong></summary>
 
 **What is SQLi?**
 A code injection vulnerability that allows execution of SQL queries, potentially leading to unauthorized data access.
@@ -161,7 +163,7 @@ A code injection vulnerability that allows execution of SQL queries, potentially
 </details>
 
 <details>
-<summary><strong>XSS (Cross-Site Scripting)</strong></summary>
+<summary><strong>✒️ XSS (Cross-Site Scripting)</strong></summary>
 
 **What is XSS?**
 Allows attackers to inject JavaScript into web pages, affecting other users.
@@ -181,7 +183,7 @@ Allows attackers to inject JavaScript into web pages, affecting other users.
 </details>
 
 <details>
-<summary><strong>Open Redirect (OR)</strong></summary>
+<summary><strong>↪️ Open Redirect (OR)</strong></summary>
 
 **What is Open Redirect?**
 A vulnerability that redirects users to untrusted locations via user-controlled input.
@@ -200,7 +202,7 @@ A vulnerability that redirects users to untrusted locations via user-controlled 
 </details>
 
 <details>
-<summary><strong>CRLF Injection</strong></summary>
+<summary><strong>✉️ CRLF Injection</strong></summary>
 
 **What is CRLF?**
 Inserts carriage return (CR) and line feed (LF) to manipulate HTTP headers.
@@ -220,33 +222,19 @@ Inserts carriage return (CR) and line feed (LF) to manipulate HTTP headers.
 
 ---
 
-## 🤝 Contributing
+<h2 style="border-bottom: 2px solid #cccccc;">🤝 Contributing</h2>
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you'd like to change.
 
 ---
 
-## 📄 License
+<h2 style="border-bottom: 2px solid #cccccc;">📄 License</h2>
 
 Licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-## ⚠️ Disclaimer
+<h2 style="border-bottom: 2px solid #cccccc;">⚠️ Disclaimer</h2>
 
-This tool is for **educational and authorized testing** purposes only. Use it only on systems you own or have permission to test. The authors are **not responsible for misuse or any damages** caused.
-
-```
-
----
-
-### ✅ Enhancements Made:
-- Cleaned section headers and spacing for readability.
-- Added emoji for visuals and quick scanning.
-- Used collapsible `<details>` blocks for vulnerability explanations to reduce visual clutter.
-- Applied consistent markdown and bash code block formatting.
-- Improved callout styling for emphasis (e.g., `What is XSS?`, `Testing Steps`).
-- Refined the language to be concise and professional.
-
-Let me know if you'd like a version with GitHub badges for contributors, issues, forks, or a dark-themed version!
-```
+> [!WARNING]
+> This tool is for **educational and authorized testing** purposes only. Use it only on systems you own or have permission to test. The authors are **not responsible for misuse or any damages** caused.
